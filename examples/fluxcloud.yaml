@@ -32,15 +32,17 @@ spec:
         - containerPort: 3031
         env:
         - name: SLACK_URL
-          value: "https://hooks.slack.com/services/WEBHOOK_URL"
+        # value: "https://hooks.slack.com/services/WEBHOOK_URL"
+          value: "https://hooks.slack.com/services/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"
         - name: SLACK_CHANNEL
-          value: "#kubernetes"
+        # value: "#kubernetes"
+          value: "#weave-flux-notif"
         # Or configure multiple channels
         # (comma separated <channel>=<namespace>) string:
         #  value: "#kubernetes=*,#team=team"
         - name: SLACK_USERNAME
-          value: Flux Deployer
+          value: "Flux Deployer"
         - name: SLACK_ICON_EMOJI
           value: ":heart:"
         - name: GITHUB_URL
-          value: "https://github.com/justinbarrick/fluxcloud/"
+          value: "git@github.com:lmctest/flux-example.git"
