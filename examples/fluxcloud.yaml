@@ -10,6 +10,7 @@ spec:
   - protocol: TCP
     port: 80
     targetPort: 3031
+
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
@@ -32,10 +33,8 @@ spec:
         - containerPort: 3031
         env:
         - name: SLACK_URL
-        # value: "https://hooks.slack.com/services/WEBHOOK_URL"
           value: "https://hooks.slack.com/services/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"
         - name: SLACK_CHANNEL
-        # value: "#kubernetes"
           value: "#weave-flux-notif"
         # Or configure multiple channels
         # (comma separated <channel>=<namespace>) string:
@@ -46,3 +45,5 @@ spec:
           value: ":heart:"
         - name: GITHUB_URL
           value: "git@github.com:lmctest/flux-example.git"
+        - name: EXPORTER_TYPE
+          value: "slack"
