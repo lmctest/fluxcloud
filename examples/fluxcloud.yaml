@@ -41,7 +41,7 @@ spec:
         # (comma separated <channel>=<namespace>) string:
         #  value: "#kubernetes=*,#team=team"
         - name: SLACK_USERNAME
-          value: "Flux Deployer"
+          value: "incoming-webhook-deployment"
         - name: SLACK_ICON_EMOJI
           value: ":heart:"
         - name: GITHUB_URL
